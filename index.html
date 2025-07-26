@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <section class="aboutme">
+    <div class="left-box">
+        <h1 class="me" id="typ"></h1>
+        <p>
+            Hi! I'm a passionate Front-End Developer with a strong focus on creating beautiful, responsive, and user-friendly web interfaces. I love turning complex problems into simple, elegant solutions using clean and efficient code.
+        
+            With a solid foundation in HTML, CSS, JavaScript, I aim to bring ideas to life in the browser. I’m constantly learning new technologies and staying up to date with industry trends to build modern and accessible web experiences.
+            
+            Whether it's crafting a sleek landing page or developing a dynamic web app, I take pride in writing code that not only works well but also looks great.
+            
+            Let’s build something amazing together!
+
+        </p>
+    </div>
+    <div class="right-box">
+        <img src="/img.png" >
+    </div>
+  </section>
+
+  <!--projects-->
+  <section class="project-section">
+    <h2 class="title">Projects</h2>
+    <div class="project-flexbox">
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>A responsive personal portfolio using HTML, CSS, and JavaScript to showcase my skills and work.</p>
+            <a href="https://punith-app.github.io/Weather-site/" target="_blank" class="project-link">View project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>to-do app</h3>
+            <p>A responsive personal portfolio using HTML, CSS, and JavaScript to showcase my skills and work.</p>
+            <a href="https://punith-app.github.io/todo-list/" target="_blank" class="project-link">View project</a>
+        </div>
+
+        
+
+    </div>
+
+  </section>
+<section class="skill-section">
+    <h2 class="skill-title">Skills</h2>
+    <div class="skill-flexbox">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Figma</div>
+    </div>
+
+
+</section>
+<section class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-info">
+      <div>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:punithsree615@gmail.com">punithsree615@gmail.com</a>
+      </div>
+      <div>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+919398035360">+91 9398035360</a>
+      </div>
+      <div>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/sree-punith/" target="_blank">LinkedIn Profile</a>
+      </div>
+    </div>
+  </section> 
+</body>
+</html>
+
+<script>
+    const text = "Sree Punith Gandhari";
+    const typing = document.getElementById("typ");
+    let i = 0;
+  
+    function typeEffect() {
+      if (i < text.length) {
+        typing.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 100);
+      }
+    }
+  
+    window.onload = typeEffect;
+  </script>
+  
